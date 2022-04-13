@@ -1,6 +1,6 @@
 {
     "name": "MicroSync",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Twilsock message parser Sync Client",
     "keywords": "twilio, websockets, parser",
     "repository":
