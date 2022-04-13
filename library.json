@@ -1,0 +1,30 @@
+{
+    "name": "MicroSync",
+    "version": "1.0.0",
+    "description": "Twilsock message parser Sync Client",
+    "keywords": "twilio, websockets, parser",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/chaosloth/twilio-micro-sync.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Christopher Connolly",
+        "email": "christopher.james.connolly@gmail.com",
+        "url": "https://www.connotron.com"
+      }
+    ],
+    "license": "MIT",
+    "homepage": "https://twilio.com/sync",
+    "dependencies": {
+      "bblanchon/ArduinoJson": "~6.19.4"
+    },
+    "frameworks": "*",
+    "platforms": "*",
+    "build": {
+      "libArchive": false
+    }
+  }
+    
