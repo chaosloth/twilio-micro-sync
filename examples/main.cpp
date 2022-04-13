@@ -10,8 +10,8 @@
   ============================================================
   */
 #include <cstdio>
-#include "Twilio/Parser.h"
-#include "Twilio/MessageProcessor.h"
+#include "Parser.h"
+#include "MessageProcessor.h"
 
 using namespace std;
 
@@ -32,13 +32,13 @@ void test1()
     {
         twilio::MessagePtr msg = twilio::Parser::parse(ctx);
 
-        printf("Frame Length: %lu\n", msg->frame.length());
+        printf("Frame Length: %d\n", msg->frame.length());
         printf("Protocol: %s\n", msg->protocol.c_str());
         printf("Version: %s\n", msg->version.c_str());
         printf("ID: %s\n", msg->id.c_str());
         printf("Method: %s\n", msg->method.c_str());
-        printf("Header Length: %lu\n", msg->header.length());
-        printf("Payload Length: %lu\n", msg->msgPayload.length());
+        printf("Header Length: %d\n", msg->header.length());
+        printf("Payload Length: %d\n", msg->msgPayload.length());
 
         printf("JSON Keys for header\n");
         DynamicJsonDocument headerJsonDoc(2048);
