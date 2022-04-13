@@ -142,6 +142,10 @@ void setup()
     proc.registerOnMessage(printMsg);
 }
 
+void loop()
+{
+}
+
 int main()
 {
     printf("Parser Test\n");

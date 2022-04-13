@@ -24,7 +24,13 @@
     "frameworks": "*",
     "platforms": "*",
     "build": {
-      "libArchive": false
+      "libArchive": false,
+      "srcFilter": [
+        "+<*.c>",
+        "+<*.cpp>",
+        "+<*.h>",
+        "-main.cpp"
+    ]
     }
   }
     

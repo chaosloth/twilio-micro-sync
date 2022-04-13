@@ -20,6 +20,13 @@ namespace twilio
         throw std::runtime_error("Parser Error: " + message);
     }
 
+    std::string Parser::ToString(int n)
+    {
+        std::ostringstream stm;
+        stm << n;
+        return stm.str();
+    }
+
     const bool Parser::icomp(std::string &s1, const std::string &s2)
     {
         return (strcasecmp(s1.c_str(), s2.c_str()) == 0);
@@ -60,7 +67,7 @@ namespace twilio
         std::string protoMsg;
 
         protoMsg = msg->protocol + " " + msg->version;
-        protoMsg = protoMsg + " " + std::to_string(ctx.header.length());
+        protoMsg = protoMsg + " " + ToString(ctx.header.length());
         protoMsg = protoMsg + "\r\n";
         protoMsg = protoMsg + ctx.header;
         protoMsg = protoMsg + "\r\n";

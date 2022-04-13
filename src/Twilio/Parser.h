@@ -1,5 +1,6 @@
 #pragma once
 #include <memory>
+#include <sstream>
 #include "TwilsockMessage.h"
 #include "ArduinoJson-v6.19.4.h"
 /*============================================================
@@ -38,6 +39,7 @@ namespace twilio
     static MessagePtr parse(ParseContext &ctx);
     static std::string createMessage(ParseContext &ctx);
     static void printJsonObject(JsonObject obj, std::string indent);
+    static std::string ToString(int n);
 
   private:
     static void processFrame(MessagePtr &ctx);
